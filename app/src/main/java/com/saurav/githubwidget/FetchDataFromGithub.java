@@ -2,13 +2,11 @@ package com.saurav.githubwidget;
 
 import android.app.Service;
 import android.appwidget.AppWidgetManager;
-import android.content.ComponentName;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.util.Log;
-import android.widget.RemoteViews;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
@@ -80,7 +78,6 @@ public class FetchDataFromGithub extends Service {
         {
             Log.d("Saurav","s@urav Null Pointer "+e);
         }
-        //new FetchGithubData().execute(fetchdata);
     }
 
     //class to fetch Github data
@@ -165,38 +162,6 @@ public class FetchDataFromGithub extends Service {
     public void updateWidgetView()
     {
         Log.d("Saurav", "Updating The widgetView!");
-
-      /*  RemoteViews remoteViews = new RemoteViews(getBaseContext().getPackageName(),
-                R.layout.widget_layout);
-        ComponentName thisWidget = new ComponentName( getBaseContext(), myWidget.class );
-
-        //contents of first tab
-        remoteViews.setImageViewResource(R.id.imageView, R.drawable.github1);
-        remoteViews.setTextViewText(R.id.heading, restDataname.get(0));
-        remoteViews.setTextViewText(R.id.content, restDataurl.get(0));
-
-        //contents of first tab
-        remoteViews.setImageViewResource(R.id.imageView1, R.drawable.github1);
-        remoteViews.setTextViewText(R.id.heading1,restDataname.get(1));
-        remoteViews.setTextViewText(R.id.content1,restDataurl.get(1));
-
-        //contents of first tab
-        remoteViews.setImageViewResource(R.id.imageView2, R.drawable.github1);
-        remoteViews.setTextViewText(R.id.heading2,restDataname.get(2));
-        remoteViews.setTextViewText(R.id.content2,restDataurl.get(2));
-
-        //contents of first tab
-        remoteViews.setImageViewResource(R.id.imageView3, R.drawable.github1);
-        remoteViews.setTextViewText(R.id.heading3,restDataname.get(3));
-        remoteViews.setTextViewText(R.id.content3,restDataurl.get(3));
-
-        //contents of first tab
-        remoteViews.setImageViewResource(R.id.imageView4, R.drawable.github1);
-        remoteViews.setTextViewText(R.id.heading4,restDataname.get(4));
-        remoteViews.setTextViewText(R.id.content4,restDataurl.get(4));*/
-
-        //AppWidgetManager.getInstance(getBaseContext()).updateAppWidget(thisWidget, remoteViews);
-
         Intent updateWidgetWithGitData = new Intent();
         updateWidgetWithGitData.setAction(myWidget.DATA_FETCHED);
         updateWidgetWithGitData.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID,
