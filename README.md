@@ -15,10 +15,10 @@ How to setup the widget to show your stars:
 
 Directly test the APK with my starred repo link:
 =============
-https://drive.google.com/file/d/0Byaspar4S5SEUWlocXZlZ24wRU0/view?usp=sharing
+https://drive.google.com/file/d/0Byaspar4S5SEcERWbG1TVUJUVzA/view?usp=docslist_api
 
 Screen Shot:
 =============
-![Alt text](https://cloud.githubusercontent.com/assets/1622949/8426587/b0c8f836-1f2e-11e5-88bd-5e5b0a1346bf.png "Optional title")
+![Alt text](https://cloud.githubusercontent.com/assets/1622949/13813659/bc51b3b8-eba8-11e5-84f9-9b32086e9afe.png "Optional title")
 
 
