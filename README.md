@@ -9,7 +9,7 @@ Anybody can modify the code to work with any REST API with JSON response(of same
 
 How to setup the widget to show your stars:
 =============
-1) Install the apk from : https://drive.google.com/file/d/0Byaspar4S5SEUWlocXZlZ24wRU0/view?usp=sharing
+1) Install the apk from below link.
 2) From Widget Choose GithubWidget and apply.
 3) In configuration screen enter your github username and press Configure and wait for some time.
 
