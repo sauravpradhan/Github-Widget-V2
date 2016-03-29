@@ -22,7 +22,7 @@ public class Configure extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
 // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
-        Log.d("Saurav", "s@urav Inside onCreate of Config Activity!");
+        //Log.d("Saurav", "s@urav Inside onCreate of Config Activity!");
         setResult(RESULT_CANCELED);
         setContentView(R.layout.config);
         Intent intent = getIntent();
@@ -41,20 +41,20 @@ public class Configure extends Activity {
             @Override
             public void onClick(View v) {
                 String value = etx1.getText().toString();
-                Log.d("Saurav", "s@urav Inside clickListener!"+value);
+                //Log.d("Saurav", "s@urav Inside clickListener!"+value);
                 AppWidgetProviderInfo appWidgetManager = AppWidgetManager.getInstance(getBaseContext()).getAppWidgetInfo(mAppWidgetId);
                 if (!value.isEmpty()) {
-                    Log.d("Saurav", "s@urav Value is not null");
+                    //Log.d("Saurav", "s@urav Value is not null");
                     Intent intent = new Intent();
                     intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, mAppWidgetId);
                     setResult(Activity.RESULT_OK, intent);
                     Intent serviceIntent = new Intent(getApplicationContext(), FetchDataFromGithub.class);
                     serviceIntent
                             .putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, mAppWidgetId);
-                    Log.d("Saurav", "s@urav TextToSetis:" + value);
+                    //Log.d("Saurav", "s@urav TextToSetis:" + value);
                     serviceIntent.putExtra("editText", value);
                     serviceIntent.setAction("FETCHDATA");
-                    Log.d("Saurav", "s@urav Starting Service to fetch Github Data!");
+                    //Log.d("Saurav", "s@urav Starting Service to fetch Github Data!");
                     getApplicationContext().startService(serviceIntent);
 
                     // finish this activity
@@ -62,7 +62,7 @@ public class Configure extends Activity {
 
                 }
                 else{
-                    Log.d("Saurav", "s@urav Value is null");
+                    //Log.d("Saurav", "s@urav Value is null");
                     Toast.makeText(getApplicationContext(),"Enter Some Username!",Toast.LENGTH_LONG).show();
                 }
             }

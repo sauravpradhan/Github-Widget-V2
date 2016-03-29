@@ -29,8 +29,7 @@ import java.util.ArrayList;
 public class FetchDataFromGithub extends Service {
     public static ArrayList<String> restDataname = new ArrayList<String>();
     public static ArrayList<String> restDataurl = new ArrayList<String>();
-    public static ArrayList<String> avatarurl = new ArrayList<String>();
-    private String CLEARASYNC = "CLEARASYNC";
+    //public static ArrayList<String> avatarurl = new ArrayList<String>();
     private String FETCHDATA = "FETCHDATA";
     FetchGithubData asyncTaskInstance = new FetchGithubData();
     public static Boolean isDataFetched = false;
@@ -46,13 +45,8 @@ public class FetchDataFromGithub extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         if(intent != null) {
             switch (intent.getAction()) {
-                case "CLEARASYNC":
-                    Log.d("Saurav", "s@urav Clearing AsyncTask For the first time!");
-                    asyncTaskInstance.cancel(true);
-                    break;
-
                 case "FETCHDATA":
-                    Log.d("Saurav", "s@urav Actually Fetching Data from Service!");
+                    //Log.d("Saurav", "s@urav Actually Fetching Data from Service!");
                     if (intent.hasExtra(AppWidgetManager.EXTRA_APPWIDGET_ID))
                         appWidgetId = intent.getIntExtra(
                                 AppWidgetManager.EXTRA_APPWIDGET_ID,
@@ -71,7 +65,7 @@ public class FetchDataFromGithub extends Service {
     private void fetchGithubDataFromRest(Intent intent) {
         try{
         String fetchdata = "https://api.github.com/users/"+intent.getStringExtra("editText").toString()+"/starred";
-        Log.d("Saurav", "s@urav Inside AsyncTask:"+fetchdata);
+        //Log.d("Saurav", "s@urav Inside AsyncTask:"+fetchdata);
         asyncTaskInstance.execute(fetchdata);
         }
         catch(Exception e)
@@ -86,13 +80,13 @@ public class FetchDataFromGithub extends Service {
         @Override
         protected void onPreExecute() {
             // TODO Auto-generated method stub
-            Log.d("Saurav", "s@urav Inside onPreExecute of AsyncTask!");
+            //Log.d("Saurav", "s@urav Inside onPreExecute of AsyncTask!");
             super.onPreExecute();
         }
         @Override
         protected void onProgressUpdate(String... values) {
             // TODO Auto-generated method stub
-            Log.d("Saurav", "s@urav Inside onProgressUpdate of AsyncTask!");
+            //Log.d("Saurav", "s@urav Inside onProgressUpdate of AsyncTask!");
             super.onProgressUpdate(values);
         }
 
@@ -131,37 +125,37 @@ public class FetchDataFromGithub extends Service {
                 super.onPostExecute(result);
             try {
                 jarray = new JSONArray(result);
-                Log.d("Saurav", "s@urav jarray value is" + jarray.length());
+                //Log.d("Saurav", "s@urav jarray value is" + jarray.length());
 
                 JSONArray json = jarray;
 
                 for (int i = 0; i < 5; i++) {
                     try {
                         JSONObject c = json.getJSONObject(i);
-                        Log.d("Saurav", c.getString("name"));
-                        Log.d("Saurav", c.getString("full_name"));
-                        Log.d("Saurav", c.getJSONObject("owner").getString("avatar_url"));
+                        //Log.d("Saurav", c.getString("name"));
+                        //Log.d("Saurav", c.getString("full_name"));
+                        //Log.d("Saurav", c.getJSONObject("owner").getString("avatar_url"));
                         restDataname.add(c.getString("name"));
                         restDataurl.add(c.getString("full_name"));
-                        avatarurl.add(c.getJSONObject("owner").getString("avatar_url"));
+                        //avatarurl.add(c.getJSONObject("owner").getString("avatar_url"));
 
                     } catch (Exception e) {
-                        Log.d("####", "s@urav JSon Parsing Exception:" + e);
+                        //Log.d("####", "s@urav JSon Parsing Exception:" + e);
                     }
                 }
 
             } catch (JSONException e) {
-                Log.e("JSON Parser", "s@urav Error parsing data " + e.toString());
+                //Log.e("JSON Parser", "s@urav Error parsing data " + e.toString());
             }
             // Log.d("####",result);
-            Log.d("Saurav", "AsyncTask Over");
+            //Log.d("Saurav", "AsyncTask Over");
             updateWidgetView();
         }
         }
     }
     public void updateWidgetView()
     {
-        Log.d("Saurav", "Updating The widgetView!");
+        //Log.d("Saurav", "Updating The widgetView!");
         Intent updateWidgetWithGitData = new Intent();
         updateWidgetWithGitData.setAction(myWidget.DATA_FETCHED);
         updateWidgetWithGitData.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID,

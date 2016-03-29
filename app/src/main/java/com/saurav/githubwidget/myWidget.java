@@ -16,7 +16,7 @@ public class myWidget extends AppWidgetProvider  {
 	public void onEnabled(Context context) {
 		// TODO Auto-generated method stub
 		myContext = context;
-		Log.d("Saurav", "s@urav Starting AsyncTask!");
+		//Log.d("Saurav", "s@urav Starting AsyncTask!");
 		//new FetchGithubData().execute("https://api.github.com/users/"+Configure.etx1+"/starred");
 	}
 
@@ -36,7 +36,7 @@ public class myWidget extends AppWidgetProvider  {
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager,
 			int[] appWidgetIds) {
 		// TODO Auto-generated method stub
-		Log.d("Saurav", "s@urav Inside OnUpdate of the Widget!");
+		//Log.d("Saurav", "s@urav Inside OnUpdate of the Widget!");
 		if(FetchDataFromGithub.isDataFetched) {
 			final int N = appWidgetIds.length;
 			for (int i = 0; i < N; i++) {
@@ -52,7 +52,7 @@ public class myWidget extends AppWidgetProvider  {
 	}
 
 	private RemoteViews updateListView(Context context, int appWidgetId) {
-		Log.d("Saurav", "s@urav Inside updateListView! "+" Length of restDataname is:"+FetchDataFromGithub.restDataname.size());
+		//Log.d("Saurav", "s@urav Inside updateListView! "+" Length of restDataname is:"+FetchDataFromGithub.restDataname.size());
 		final RemoteViews remoteViews = new RemoteViews(context.getPackageName(),
 				R.layout.widget_layout);
 		ComponentName thisWidget = new ComponentName(context, myWidget.class );
@@ -79,9 +79,9 @@ public class myWidget extends AppWidgetProvider  {
 	}
 	public void onReceive(Context context, Intent intent) {
         super.onReceive(context, intent);
-		Log.d("Saurav", "s@urav Inside onReceive!"+intent.getAction());
+		//Log.d("Saurav", "s@urav Inside onReceive!"+intent.getAction());
         if (intent.getAction().equals(DATA_FETCHED)) {
-			Log.d("Saurav", "s@urav Sending Manual Callback for Data Fetched!");
+			//Log.d("Saurav", "s@urav Sending Manual Callback for Data Fetched!");
             int appWidgetId = intent.getIntExtra(
                     AppWidgetManager.EXTRA_APPWIDGET_ID,
                     AppWidgetManager.INVALID_APPWIDGET_ID);
