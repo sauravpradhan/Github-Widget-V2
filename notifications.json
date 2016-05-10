@@ -11,11 +11,6 @@
     "message": "Please join for meeting in 15 mins!",
     "negativeButtonText": "Exit App",
     "neutralButtonText": "Open web page",
-    "positiveButtonText": "Open Play Store",
-    "positiveButtonAction": {
-      "type": "OpenStoreButtonAction",
-      "packageName": "de.vorlesungsfrei.taekwondo.ads"
-    },
     "negativeButtonAction": {
       "type": "ExitAppButtonAction"
     },
