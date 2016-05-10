@@ -19,16 +19,5 @@
       "link": "https://github.com/sauravpradhan"
     },
     "modal": false
-  },
-  {
-    "type": "ToastNotification",
-    "notificationConfiguration": {
-      "startShowingDate": null,
-      "executionPolicy": "ALWAYS",
-      "numberOfTotalViews": null,
-      "versionCodePolicy": null
-    },
-    "message": "Please join for meeting in 15 mins!",
-    "duration": 1
   }
 ]
