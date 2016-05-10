@@ -21,7 +21,7 @@
     },
     "neutralButtonAction": {
       "type": "OpenUrlButtonAction",
-      "link": "https://github.com/kaiwinter/android-remote-notifications"
+      "link": "https://github.com/sauravpradhan"
     },
     "modal": false
   },
@@ -33,7 +33,7 @@
       "numberOfTotalViews": null,
       "versionCodePolicy": null
     },
-    "message": "This is a Toast Notification",
+    "message": "Please join for meeting in 15 mins!",
     "duration": 1
   }
 ]
