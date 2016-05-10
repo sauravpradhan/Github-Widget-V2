@@ -7,8 +7,8 @@
       "numberOfTotalViews": null,
       "versionCodePolicy": null
     },
-    "title": "Title",
-    "message": "This is an AlertDialog notification",
+    "title": "Urgent",
+    "message": "Please join for meeting in 15 mins!",
     "negativeButtonText": "Exit App",
     "neutralButtonText": "Open web page",
     "positiveButtonText": "Open Play Store",
