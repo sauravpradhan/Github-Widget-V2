@@ -16,9 +16,9 @@ How to setup the widget to show your stars:
 
 3) In configuration screen enter your github username and press Configure and wait for some time.
 
-Directly test the working APK:
+Directly test the working APK :video_game:   :video_game: :video_game:   :video_game: :
 =============
-https://drive.google.com/file/d/0Byaspar4S5SERGFLNDRJWDRoT3c/view?usp=sharing    :video_game:   :video_game:
+https://drive.google.com/file/d/0Byaspar4S5SERGFLNDRJWDRoT3c/view?usp=sharing
 
 Screen Shot:
 =============
