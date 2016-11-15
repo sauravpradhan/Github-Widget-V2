@@ -18,7 +18,7 @@ How to setup the widget to show your stars:
 
 Directly test the working APK :video_game:   :video_game: :video_game:   :video_game: :
 =============
-https://drive.google.com/file/d/0Byaspar4S5SERGFLNDRJWDRoT3c/view?usp=sharing
+https://drive.google.com/file/d/0Byaspar4S5SEbVphYlgxc0l0TjQ/view?usp=sharing
 
 Screen Shot:
 =============
