@@ -22,6 +22,6 @@ https://drive.google.com/file/d/0Byaspar4S5SEbVphYlgxc0l0TjQ/view?usp=sharing
 
 Screen Shot:
 =============
-![Alt text](https://cloud.githubusercontent.com/assets/1622949/13813659/bc51b3b8-eba8-11e5-84f9-9b32086e9afe.png "Optional title")
+![Alt text](https://cloud.githubusercontent.com/assets/1622949/20300312/a3e2a6be-ab44-11e6-87c9-0d2d9a89979c.png "Optional title")
 
 
