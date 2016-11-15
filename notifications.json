@@ -1,0 +1,23 @@
+[
+  {
+    "type": "AlertDialogNotification",
+    "notificationConfiguration": {
+      "startShowingDate": null,
+      "executionPolicy": null,
+      "numberOfTotalViews": null,
+      "versionCodePolicy": null
+    },
+    "title": "Urgent",
+    "message": "Please join for meeting in 15 mins!",
+    "negativeButtonText": "Exit App",
+    "neutralButtonText": "Open web page",
+    "negativeButtonAction": {
+      "type": "ExitAppButtonAction"
+    },
+    "neutralButtonAction": {
+      "type": "OpenUrlButtonAction",
+      "link": "https://github.com/sauravpradhan"
+    },
+    "modal": false
+  }
+]
