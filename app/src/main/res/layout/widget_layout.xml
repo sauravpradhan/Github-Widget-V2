@@ -4,11 +4,12 @@
     android:layout_height="match_parent"
      android:background="#FFFFFF"
     android:orientation="horizontal"
-    android:padding="0dip" >
-<RelativeLayout 
+    android:padding="4dip" >
+<RelativeLayout
     android:id="@+id/rel1"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dip">
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="50dp"
@@ -23,28 +24,30 @@
         android:layout_toRightOf="@id/imageView"
         android:background="#DCDCDC"
         android:gravity="center_vertical"
-        android:padding="0dip"
-        android:singleLine="true"
+        android:padding="2dip"
         android:text="Heading"
-        android:textColor="#000000"
-        android:textSize="15sp" />
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
 
 
     <TextView
         android:id="@+id/content"
         android:layout_width="fill_parent"
-        android:layout_height="30dip"
+        android:layout_height="25dip"
         android:layout_below="@id/heading"
-        android:layout_marginTop="0dip"
         android:layout_toRightOf="@id/imageView"
         android:background="#DCDCDC"
         android:ellipsize="marquee"
-        android:padding="0dip"
+        android:padding="2dip"
         android:text="Content"
-        android:textColor="#000000"
-        android:textSize="12sp" />
 
-    <LinearLayout 
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"/>
+
+    <LinearLayout
         android:id="@+id/border"
         android:orientation="horizontal"
         android:layout_below="@+id/content"
@@ -55,10 +58,11 @@
 </RelativeLayout>
 
 <RelativeLayout
-    android:id="@+id/rel2" 
+    android:id="@+id/rel2"
     android:layout_below="@id/rel1"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dip">
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="50dp"
@@ -73,26 +77,27 @@
         android:layout_toRightOf="@id/imageView1"
         android:background="#DCDCDC"
         android:gravity="center_vertical"
-        android:padding="0dip"
-        android:singleLine="true"
+        android:padding="2dip"
         android:text="Heading"
-        android:textColor="#000000"
-        android:textSize="15sp" />
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/content1"
         android:layout_width="fill_parent"
-        android:layout_height="30dip"
+        android:layout_height="25dip"
         android:layout_below="@id/heading1"
-        android:layout_marginTop="0dip"
         android:layout_toRightOf="@id/imageView1"
         android:background="#DCDCDC"
         android:ellipsize="marquee"
-        android:padding="0dip"
+        android:padding="2dip"
         android:text="Content"
-        android:textColor="#000000"
-        android:textSize="12sp" />
-       <LinearLayout 
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"/>
+       <LinearLayout
         android:id="@+id/border1"
         android:orientation="horizontal"
         android:layout_below="@+id/content1"
@@ -103,10 +108,11 @@
 </RelativeLayout>
 
 <RelativeLayout
-    android:id="@+id/rel3" 
+    android:id="@+id/rel3"
     android:layout_below="@id/rel2"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dip">
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="50dp"
@@ -121,26 +127,27 @@
         android:layout_toRightOf="@id/imageView2"
         android:background="#DCDCDC"
         android:gravity="center_vertical"
-        android:padding="0dip"
-        android:singleLine="true"
+        android:padding="2dip"
         android:text="Heading"
-        android:textColor="#000000"
-        android:textSize="15sp" />
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/content2"
         android:layout_width="fill_parent"
-        android:layout_height="30dip"
+        android:layout_height="25dip"
         android:layout_below="@id/heading2"
-        android:layout_marginTop="0dip"
         android:layout_toRightOf="@id/imageView2"
         android:background="#DCDCDC"
         android:ellipsize="marquee"
-        android:padding="0dip"
+        android:padding="2dip"
         android:text="Content"
-        android:textColor="#000000"
-        android:textSize="12sp" />
-       <LinearLayout 
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"/>
+       <LinearLayout
         android:id="@+id/border2"
         android:orientation="horizontal"
         android:layout_below="@+id/content2"
@@ -150,10 +157,11 @@
 
 </RelativeLayout>
 <RelativeLayout
-    android:id="@+id/rel4" 
+    android:id="@+id/rel4"
     android:layout_below="@id/rel3"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dip">
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="50dp"
@@ -168,26 +176,27 @@
         android:layout_toRightOf="@id/imageView3"
         android:background="#DCDCDC"
         android:gravity="center_vertical"
-        android:padding="0dip"
-        android:singleLine="true"
+        android:padding="2dip"
         android:text="Heading"
-        android:textColor="#000000"
-        android:textSize="15sp" />
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/content3"
         android:layout_width="fill_parent"
-        android:layout_height="30dip"
+        android:layout_height="25dip"
         android:layout_below="@id/heading3"
-        android:layout_marginTop="0dip"
         android:layout_toRightOf="@id/imageView3"
         android:background="#DCDCDC"
         android:ellipsize="marquee"
-        android:padding="0dip"
+        android:padding="2dip"
         android:text="Content"
-        android:textColor="#000000"
-        android:textSize="12sp" />
-       <LinearLayout 
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"/>
+       <LinearLayout
         android:id="@+id/border3"
         android:orientation="horizontal"
         android:layout_below="@+id/content3"
@@ -197,10 +206,11 @@
 
 </RelativeLayout>
 <RelativeLayout
-    android:id="@+id/rel5" 
+    android:id="@+id/rel5"
     android:layout_below="@id/rel4"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dip">
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="50dp"
@@ -215,26 +225,28 @@
         android:layout_toRightOf="@id/imageView4"
         android:background="#DCDCDC"
         android:gravity="center_vertical"
-        android:padding="0dip"
-        android:singleLine="true"
+        android:padding="2dip"
         android:text="Heading"
-        android:textColor="#000000"
-        android:textSize="15sp" />
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        />
 
     <TextView
         android:id="@+id/content4"
         android:layout_width="fill_parent"
-        android:layout_height="30dip"
+        android:layout_height="25dip"
         android:layout_below="@id/heading4"
-        android:layout_marginTop="0dip"
         android:layout_toRightOf="@id/imageView4"
         android:background="#DCDCDC"
         android:ellipsize="marquee"
-        android:padding="0dip"
+        android:padding="2dip"
         android:text="Content"
-        android:textColor="#000000"
-        android:textSize="12sp" />
-       <LinearLayout 
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"/>
+       <LinearLayout
         android:id="@+id/border4"
         android:orientation="horizontal"
         android:layout_below="@+id/content4"
